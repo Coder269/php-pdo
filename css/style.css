@@ -47,13 +47,27 @@ input[type="submit"]
     border: none;
     cursor: pointer;
 }
-section {
+#stories {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    border-radius: 10px;
+    gap: 1.5rem;
     padding: 1.5rem;
     margin-bottom: 2rem;
+
+}
+
+article {
+    padding: 1rem;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+article>h2 {
+    text-align: center;
+}
+article>h5 {
+    text-align: center;
 }

@@ -22,19 +22,23 @@ $stories = $statement->fetchAll();
 include 'header.php';
 ?>
 <main>
+    <section>
     <h1>Welcome to our Stories</h1>
-    <h2>List of Stories</h2>
+    </section>
+    <section id="stories">
     <?php
     foreach ($stories as $story)
     {
-        echo "<section>";
+        echo "<article>";
         echo "<h2>{$story['title']}</h2>";
-        echo "<h4>By: {$story['author']}</h4>";
-        echo "<article>{$story['content']}</article>";
-        echo "</section>";
+        echo "<h5><em>By: {$story['author']}</em></h5>";
+        echo "<p>{$story['content']}</p>";
+        echo "</article>";
 
     }
     ?>
+    </section>
+
 </main>
 </body>
 </html>
