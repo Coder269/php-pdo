@@ -7,7 +7,6 @@ $query = "SELECT * FROM story";
 $statement = $pdo->query($query);
 $stories = $statement->fetchAll();
 
-
 ?>
 
 <!doctype html>

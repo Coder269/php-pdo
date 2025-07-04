@@ -63,11 +63,13 @@ include 'header.php';
         <label for="author"><strong>Author :</strong></label>
         <input type="text" name="author" id="author" maxlength="100" required>
         <br><br>
-        <label for="content"><strong>Content :</strong></label>
+        <label for="content"><strong>Story Content :</strong></label>
             <br>
         <textarea name="content" id="content" cols="100" rows="20" required></textarea>
         <br><br>
+            <div>
         <input type="submit" value="Create">
+            </div>
         </fieldset>
     </form>
 </main>

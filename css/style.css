@@ -31,10 +31,12 @@ fieldset {
     border-radius: 10px;
     width: 50%;
     margin: 0 auto;
-    text-align: center;
 }
 fieldset legend {
     text-align: left;
+}
+div {
+    text-align: center;
 }
 input[type="submit"]
 {
