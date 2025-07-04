@@ -1,0 +1,53 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+.errorTitle {
+    color: red;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+fieldset {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+fieldset legend {
+    text-align: left;
+}
+input[type="submit"]
+{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
