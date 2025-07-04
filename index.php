@@ -29,11 +29,11 @@ include 'header.php';
     <?php
     foreach ($stories as $story)
     {
-        echo "<article>";
-        echo "<h2>{$story['title']}</h2>";
-        echo "<h5><em>By: {$story['author']}</em></h5>";
-        echo "<p>{$story['content']}</p>";
-        echo "</article>";
+        echo "<article>
+              <h2>{$story['title']}</h2>
+              <h5><em>By: {$story['author']}</em></h5>
+              <p>{$story['content']}</p>
+              </article>";
 
     }
     ?>

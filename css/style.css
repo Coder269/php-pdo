@@ -59,7 +59,7 @@ input[type="submit"]
 }
 
 article {
-    padding: 1rem;
+    padding: 0.5rem;
     width: 90%;
     border: 1px solid black;
     border-radius: 1rem;
@@ -70,4 +70,8 @@ article>h2 {
 }
 article>h5 {
     text-align: center;
+}
+
+article>p {
+    padding: 2rem;
 }

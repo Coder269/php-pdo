@@ -25,8 +25,15 @@ if (!empty($_POST))
 
     if (empty($errors))
     {
-        $query = "INSERT INTO story (title, author, content) VALUES ('$title', '$author', '$content')";
-        $rowCount = $pdo->exec($query);
+        //Sécurisation des requêtes SQL (pour éviter les failles d'injections SQL)
+        //On utilise les requêtes préparées pour la sécurisation
+        $query = "INSERT INTO story (title, author, content) VALUES (:title, :author, :content)";
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(":title", $title);
+        $statement->bindValue(":author", $author);
+        $statement->bindValue(":content", $content);
+        $statement->execute();
+
         echo "<script>alert('Story created successfully');</script>";
     }
 
