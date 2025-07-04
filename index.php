@@ -19,11 +19,11 @@ $stories = $statement->fetchAll();
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <a href="create.php"><strong>Create</strong></a>
-    <h1>Welcome to our Stories</h1>
-</header>
+<?php
+include 'header.php';
+?>
 <main>
+    <h1>Welcome to our Stories</h1>
     <h2>List of Stories</h2>
     <?php
     foreach ($stories as $story)

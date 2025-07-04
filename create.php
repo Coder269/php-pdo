@@ -43,10 +43,11 @@ if (!empty($_POST))
 
 </head>
 <body>
-<header>
-    <h1>Create A Story</h1>
-</header>
+<?php
+include 'header.php';
+?>
 <main>
+    <h1>Create A Story</h1>
     <form action="create.php" method="post">
         <fieldset>
             <legend><h3>Create Story Form</h3></legend>
